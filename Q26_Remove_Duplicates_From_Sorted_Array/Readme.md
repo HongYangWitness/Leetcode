@@ -50,6 +50,8 @@ My Solution:
 
  所以我想到遍历整个数组，记录要替换元素的位置replace_index和重复元素的值duplicate。具体来说，先将replace_index设为1，重复值duplicate设为第一个元素nums[0]，如果num[i]==duplicate，则遍历下一个，当遇见不重复值时nums[i]，将replace_index位置的元素设为当前不同值nums[i]，且replace_index+1，而duplicate设为当前不同元素nums[i]的值。直到遍历完所有元素。
 
+此方法也叫双指针。
+
 Good Solution
 
 **利用栈的思想，**从最后一个开始遍历，如果nums[i]==nums[i-1]，咋把nums[i]弹出。
